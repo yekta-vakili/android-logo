@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>android logo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="Body">
+      <div id="tel"></div>
+      <div id="ear1"></div>
+      <div id="ear2"></div>
+      <div id="head">
+        <div id="perspiration"></div>
+        <div id="eye1"></div>
+        <div id="eye2"></div>
+      </div>
+      <div id="abd">
+        <div id="hand1"></div>
+        <div id="abdominal"></div>
+        <div id="hand2"></div>
+      </div>
+      <h1>android</h1>
+    </div>
+    <div id="leg1"></div>
+    <div id="leg2"></div>
+    <script>
+      var ear1 = document.getElementById("ear1");
+      var ear2 = document.getElementById("ear2");
+      var head = document.getElementById("head");
+      var eye1 = document.getElementById("eye1");
+      var eye2 = document.getElementById("eye2");
+      var hand1 = document.getElementById("hand1");
+      var hand2 = document.getElementById("hand2");
+      var abdominal = document.getElementById("abdominal");
+      var perspiration = document.getElementById("perspiration");
+      var tel = document.getElementById("tel");
+
+      hand1.onclick = function () {
+        hand1.style.transform = "rotate(130deg)";
+        hand1.style.transition = "2s";
+
+        setTimeout(function () {
+          hand1.style.transform = "rotate(110deg)";
+          hand1.style.transition = "2s";
+        }, 2000);
+      };
+      hand2.onclick = function () {
+        hand2.style.transform = "rotate(-130deg)";
+        hand2.style.transition = "2s";
+
+        setTimeout(function () {
+          hand2.style.transform = "rotate(-110deg)";
+          hand2.style.transition = "2s";
+        }, 2000);
+      };
+      abdominal.onclick = function () {
+        eye1.style.height = "10px";
+        eye2.style.height = "10px";
+        eye1.style.borderRadius = "20px";
+        eye2.style.borderRadius = "20px";
+        perspiration.style.backgroundColor = "red";
+
+        setTimeout(function () {
+          eye1.style.height = "20px";
+          eye1.style.transition = "3s";
+          eye2.style.height = "20px";
+          eye2.style.transition = "3s";
+          perspiration.style.backgroundColor = "#97c03a";
+        }, 2000);
+      };
+      head.onclick = function (){
+        tel.style.borderColor="yellow"
+        eye2.style.width = "40px";
+        eye2.style.height = "10px";
+        eye1.style.borderRadius = "20px";
+        eye2.style.borderRadius = "20px";
+
+        setTimeout(function () {
+          eye2.style.width = "20px";
+          eye2.style.height = "20px";
+          eye2.style.transition = "3s";
+          tel.style.borderColor="white"
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>

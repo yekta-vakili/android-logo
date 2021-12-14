@@ -1,0 +1,119 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+}
+#Body {
+  display: flex;
+  flex-direction: column;
+}
+#tel{
+  width: 100px;
+  height: 20px;
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-left: 47px;
+  position: relative;
+  top: 90px;
+}
+#head {
+  display: flex;
+  width: 200px;
+  height: 100px;
+  background-color: #97c03a;
+  border-top-left-radius: 200px;
+  border-top-right-radius: 200px;
+}
+#eye1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 1.5rem;
+  margin-top: 3.5rem;
+  flex-direction: row;
+}
+#eye2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 4rem;
+  margin-top: 3.5rem;
+  flex-direction: row;
+}
+#ear1 {
+  width: 10px;
+  height: 60px;
+  background-color: #97c03a;
+  border-radius: 10px;
+  position: relative;
+  top: 78px;
+  left: 38px;
+  transform: rotate(-30deg);
+}
+#ear2 {
+  width: 10px;
+  height: 60px;
+  background-color: #97c03a;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  left: 154px;
+  transform: rotate(30deg);
+}
+#abdominal {
+  width: 200px;
+  height: 160px;
+  background-color: #97c03a;
+  margin-top: 15px;
+}
+#abd {
+  display: flex;
+  justify-content: center;
+  margin-left: -50px;
+}
+#hand1,
+#hand2 {
+  width: 40px;
+  height: 120px;
+  background-color: #97c03a;
+  margin-top: 15px;
+  border-radius: 50px;
+  transform-origin: 50% 15%;
+}
+#hand1 {
+  margin-right: 10px;
+}
+#hand2 {
+  margin-left: 10px;
+}
+#leg1,
+#leg2 {
+  width: 40px;
+  height: 120px;
+  background-color: #97c03a;
+  flex-direction: row;
+  border-radius: 50px;
+  margin: 22rem 15px 0 -130px;
+}
+@font-face {
+  font-family: android;
+  src: url(Android.ttf);
+}
+h1 {
+  font-family: "android";
+  margin-top: 100px;
+  margin-left: -3px;
+  font-size: 54px;
+}
+#perspiration{
+  width: 20px;
+  height: 20px;
+  background-color: #97c03a;
+  border-radius: 100% 5% 100% 100%;
+  transform: rotate(-77deg);
+  position: relative;
+  top: 14px;
+  left: 7.4rem;
+}
